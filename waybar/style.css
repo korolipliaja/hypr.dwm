@@ -1,0 +1,185 @@
+  * {
+        font-family: JetBrainsMono;
+        font-weight: bold;
+        font-size: 15px;
+      }
+
+      window#waybar {
+        background-color: transparent;
+        color: #1E1E28;
+      }
+
+      window#waybar > box {
+        margin: 3px 6px 5px 6px;
+        background-color: #a7b4c6;
+        border-top: 1;
+        border-left: 1;
+        border-right: 1;
+        border-bottom: 1;
+        border-style: solid;
+        border-color: #6C86A3;
+        border-radius: 10px;
+      }
+
+      #workspaces button {
+        background-color: #93a2b7;
+        border-color: #93a2b7;
+        border-radius: 20px;
+        margin: 2px;
+        padding: 0px;
+        padding-right: 4px;
+        padding-left: 4px;
+        color: #F3F6F4;
+        min-height: 26px;
+        transition: all 0.4s ease-in-out;
+      }
+
+      #workspaces button label{
+        color: #F3F6F4;
+        font-weight: bolder;
+        font-size: 16px;
+      }
+      
+      #workspaces button.empty{
+        background: #364f7f;
+      }
+
+      /* #workspaces button.empty:first-child { */
+      /*   border-top-left-radius: 9999px; */
+      /*   border-bottom-left-radius: 9999px; */
+      /* } */
+      /**/
+      /* #workspaces button.empty:last-child { */
+      /*   border-top-right-radius: 9999px; */
+      /*   border-bottom-right-radius: 9999px; */
+      /* } */
+
+      #workspaces button.active {
+        background: radial-gradient(circle, rgba(190, 204, 237, 1) 0%, rgba(190, 204, 237, 1) 50%, rgba(95, 113, 143, 1) 100%); 
+        background-size: 400% 400%;
+        animation: gradient 5s linear infinite;
+        transition: all 0.3s ease-in-out;
+      }
+
+      #workspaces button.active label {
+        color: #F3F6F4;
+        font-weight: bolder;
+      }
+
+      @keyframes gradient {
+	      0% {
+		      background-position: 0% 50%;
+	      }
+	      50% {
+		      background-position: 100% 30%;
+	      }
+	      100% {
+		      background-position: 0% 50%;
+	      }
+      }
+
+      @keyframes gradient_f {
+	      0% {
+		      background-position: 0% 200%;
+	      }
+          50% {
+              background-position: 200% 0%;
+          }
+	      100% {
+		      background-position: 400% 200%;
+	      }
+      }
+
+      @keyframes gradient_f_nh {
+	      0% {
+		      background-position: 0% 200%;
+	      }
+	      100% {
+		      background-position: 200% 200%;
+	      }
+      }
+
+      #custom-date,
+      #battery,
+      #clock,
+      #pulseaudio,
+      #workspaces,
+      #window,
+      #language,
+      #temperature,
+      #text,
+      #custom-launcher,
+      #custom-separator,
+
+      #tray {
+        color: #cdd6f4;
+        background: #5f718f;
+        padding: 0 0.6em;
+        margin: 3 4 3 3px;
+        padding-top: 0px;
+        padding-bottom: 2px;
+        border-style: solid;
+        min-height: 24px;
+        border-radius: 11 11 11 11px;
+      }
+
+      #tray {
+        margin-right: 6px;
+      }
+
+
+      #pulseaudio {
+        padding: 0 0.6em;
+        margin: 3 4 3 4px;
+        border-radius: 11 11 11 11px;
+        color: #F3F6F4;
+      }
+
+      #clock {
+        padding: 0 0.6em;
+        margin: 3 4 3 4px;
+        border-radius: 11 11 11 11px;
+        color: #F3F6F4;
+      }
+
+      #custom-date {
+        padding: 0 0.6em;
+        margin: 3 4 3 4px;
+        border-radius: 11 11 11 11px;
+      }
+
+      #battery {
+        padding: 0 0.6em;
+        margin: 3 6 3 4px;
+        border-radius: 11 11 11 11px;
+      }
+
+      #language {
+        color: #F3F6F4;
+        padding: 0 0.6em;
+        margin: 3 4 3 0px;
+        border-radius: 11 11 11 11px;
+      }
+
+      #temperature {
+        padding: 0 0.6em;
+        margin: 3 4 3 4px;
+        border-radius: 11 11 11 11px;
+      }
+
+      #custom-launcher {
+        /* padding: 0 0.6em; */
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0 0.6em;
+        border-radius: 0 15 0 0px;
+      }
+
+      #workspaces {
+        background: #5f718f;
+        padding: 0em;
+        margin: 3 0 3 11px;
+        border-radius: 11 11 11 11px;
+        padding-left: 0px;
+      }
+
